@@ -8,7 +8,7 @@ Tencent is pleased to support the open source community by making RapidJSON avai
 
 Copyright (C) 2015 THL A29 Limited, a Tencent company, and Milo Yip. All rights reserved.
 
-* [RapidJSON GitHub](https://github.com/miloyip/rapidjson/)
+* [RapidJSON GitHub](https://github.com/Tencent/rapidjson/)
 * RapidJSON Documentation
   * [English](http://rapidjson.org/)
   * [简体中文](http://rapidjson.org/zh-cn/)
@@ -20,12 +20,12 @@ Copyright (C) 2015 THL A29 Limited, a Tencent company, and Milo Yip. All rights 
 | :---------------: | :-----------------: | :-------------------: |
 | ![lin-badge]      | ![win-badge]        | ![cov-badge]          |
 
-[lin-badge]: https://travis-ci.org/miloyip/rapidjson.svg?branch=master "Travis build status"
-[lin-link]:  https://travis-ci.org/miloyip/rapidjson "Travis build status"
-[win-badge]: https://ci.appveyor.com/api/projects/status/github/miloyip/rapidjson?branch=master&svg=true "AppVeyor build status"
-[win-link]:  https://ci.appveyor.com/project/miloyip/rapidjson/branch/master "AppVeyor build status"
-[cov-badge]: https://coveralls.io/repos/miloyip/rapidjson/badge.svg?branch=master "Coveralls coverage"
-[cov-link]:  https://coveralls.io/r/miloyip/rapidjson?branch=master "Coveralls coverage"
+[lin-badge]: https://travis-ci.org/Tencent/rapidjson.svg?branch=master "Travis build status"
+[lin-link]:  https://travis-ci.org/Tencent/rapidjson "Travis build status"
+[win-badge]: https://ci.appveyor.com/api/projects/status/l6qulgqahcayidrf/branch/master?svg=true "AppVeyor build status"
+[win-link]:  https://ci.appveyor.com/project/miloyip/rapidjson-0fdqj/branch/master "AppVeyor build status"
+[cov-badge]: https://coveralls.io/repos/Tencent/rapidjson/badge.svg?branch=master "Coveralls coverage"
+[cov-link]:  https://coveralls.io/r/Tencent/rapidjson?branch=master "Coveralls coverage"
 
 ## Introduction
 
@@ -43,7 +43,7 @@ RapidJSON is a JSON parser and generator for C++. It was inspired by [RapidXml](
 
 More features can be read [here](doc/features.md).
 
-JSON(JavaScript Object Notation) is a light-weight data exchange format. RapidJSON should be in fully compliance with RFC7159/ECMA-404, with optional support of relaxed syntax. More information about JSON can be obtained at
+JSON(JavaScript Object Notation) is a light-weight data exchange format. RapidJSON should be in full compliance with RFC7159/ECMA-404, with optional support of relaxed syntax. More information about JSON can be obtained at
 * [Introducing JSON](http://json.org/)
 * [RFC7159: The JavaScript Object Notation (JSON) Data Interchange Format](https://tools.ietf.org/html/rfc7159)
 * [Standard ECMA-404: The JSON Data Interchange Format](https://www.ecma-international.org/publications/standards/Ecma-404.htm)
@@ -136,25 +136,25 @@ The following diagram shows the process.
 
 ![simpledom](doc/diagram/simpledom.png)
 
-More [examples](https://github.com/miloyip/rapidjson/tree/master/example) are available:
+More [examples](https://github.com/Tencent/rapidjson/tree/master/example) are available:
 
 * DOM API
-  * [tutorial](https://github.com/miloyip/rapidjson/blob/master/example/tutorial/tutorial.cpp): Basic usage of DOM API.
+  * [tutorial](https://github.com/Tencent/rapidjson/blob/master/example/tutorial/tutorial.cpp): Basic usage of DOM API.
 
 * SAX API
-  * [simplereader](https://github.com/miloyip/rapidjson/blob/master/example/simplereader/simplereader.cpp): Dumps all SAX events while parsing a JSON by `Reader`.
-  * [condense](https://github.com/miloyip/rapidjson/blob/master/example/condense/condense.cpp): A command line tool to rewrite a JSON, with all whitespaces removed.
-  * [pretty](https://github.com/miloyip/rapidjson/blob/master/example/pretty/pretty.cpp): A command line tool to rewrite a JSON with indents and newlines by `PrettyWriter`.
-  * [capitalize](https://github.com/miloyip/rapidjson/blob/master/example/capitalize/capitalize.cpp): A command line tool to capitalize strings in JSON.
-  * [messagereader](https://github.com/miloyip/rapidjson/blob/master/example/messagereader/messagereader.cpp): Parse a JSON message with SAX API.
-  * [serialize](https://github.com/miloyip/rapidjson/blob/master/example/serialize/serialize.cpp): Serialize a C++ object into JSON with SAX API.
-  * [jsonx](https://github.com/miloyip/rapidjson/blob/master/example/jsonx/jsonx.cpp): Implements a `JsonxWriter` which stringify SAX events into [JSONx](https://www-01.ibm.com/support/knowledgecenter/SS9H2Y_7.1.0/com.ibm.dp.doc/json_jsonx.html) (a kind of XML) format. The example is a command line tool which converts input JSON into JSONx format.
+  * [simplereader](https://github.com/Tencent/rapidjson/blob/master/example/simplereader/simplereader.cpp): Dumps all SAX events while parsing a JSON by `Reader`.
+  * [condense](https://github.com/Tencent/rapidjson/blob/master/example/condense/condense.cpp): A command line tool to rewrite a JSON, with all whitespaces removed.
+  * [pretty](https://github.com/Tencent/rapidjson/blob/master/example/pretty/pretty.cpp): A command line tool to rewrite a JSON with indents and newlines by `PrettyWriter`.
+  * [capitalize](https://github.com/Tencent/rapidjson/blob/master/example/capitalize/capitalize.cpp): A command line tool to capitalize strings in JSON.
+  * [messagereader](https://github.com/Tencent/rapidjson/blob/master/example/messagereader/messagereader.cpp): Parse a JSON message with SAX API.
+  * [serialize](https://github.com/Tencent/rapidjson/blob/master/example/serialize/serialize.cpp): Serialize a C++ object into JSON with SAX API.
+  * [jsonx](https://github.com/Tencent/rapidjson/blob/master/example/jsonx/jsonx.cpp): Implements a `JsonxWriter` which stringify SAX events into [JSONx](https://www-01.ibm.com/support/knowledgecenter/SS9H2Y_7.1.0/com.ibm.dp.doc/json_jsonx.html) (a kind of XML) format. The example is a command line tool which converts input JSON into JSONx format.
 
 * Schema
-  * [schemavalidator](https://github.com/miloyip/rapidjson/blob/master/example/schemavalidator/schemavalidator.cpp) : A command line tool to validate a JSON with a JSON schema.
+  * [schemavalidator](https://github.com/Tencent/rapidjson/blob/master/example/schemavalidator/schemavalidator.cpp) : A command line tool to validate a JSON with a JSON schema.
 
 * Advanced
-  * [prettyauto](https://github.com/miloyip/rapidjson/blob/master/example/prettyauto/prettyauto.cpp): A modified version of [pretty](https://github.com/miloyip/rapidjson/blob/master/example/pretty/pretty.cpp) to automatically handle JSON with any UTF encodings.
-  * [parsebyparts](https://github.com/miloyip/rapidjson/blob/master/example/parsebyparts/parsebyparts.cpp): Implements an `AsyncDocumentParser` which can parse JSON in parts, using C++11 thread.
-  * [filterkey](https://github.com/miloyip/rapidjson/blob/master/example/filterkey/filterkey.cpp): A command line tool to remove all values with user-specified key.
-  * [filterkeydom](https://github.com/miloyip/rapidjson/blob/master/example/filterkeydom/filterkeydom.cpp): Same tool as above, but it demonstrates how to use a generator to populate a `Document`.
+  * [prettyauto](https://github.com/Tencent/rapidjson/blob/master/example/prettyauto/prettyauto.cpp): A modified version of [pretty](https://github.com/Tencent/rapidjson/blob/master/example/pretty/pretty.cpp) to automatically handle JSON with any UTF encodings.
+  * [parsebyparts](https://github.com/Tencent/rapidjson/blob/master/example/parsebyparts/parsebyparts.cpp): Implements an `AsyncDocumentParser` which can parse JSON in parts, using C++11 thread.
+  * [filterkey](https://github.com/Tencent/rapidjson/blob/master/example/filterkey/filterkey.cpp): A command line tool to remove all values with user-specified key.
+  * [filterkeydom](https://github.com/Tencent/rapidjson/blob/master/example/filterkeydom/filterkeydom.cpp): Same tool as above, but it demonstrates how to use a generator to populate a `Document`.
